@@ -87,3 +87,5 @@ this.$route.query.id
 
 > 这里要特别注意 在子组件中 获取参数的时候是$route.params 而不是
 > $router 这很重要~~~
+>
+> 
