@@ -2,7 +2,7 @@
 
 ## 1、jsp内置对象
 
-#### 1、request对象
+### 1、request对象
 
 ##### 	   1.1、HTTP请求的所有细节
 
@@ -26,13 +26,13 @@
 
 ##### 	1.5、解决中文乱码问题
 
-​			new String(request.getParameter("name").getBytes("ISO-8859-1"), "utf_8")
+​			new String(request.getParameter("name").getBytes("ISO-8859-1"), "utf-8")
 
 ##### 	1.6、显示国际化
 
 ​				
 
-#### 2、response对象：用于响应客户请求，向客户端输出信息
+### 2、response对象：用于响应客户请求，向客户端输出信息
 
 #### 	2.1、重定向网页
 
@@ -66,7 +66,7 @@
 
  
 
-#### 3、session对象
+### 3、session对象
 
 #### 	3.1、创建及获取客户的会话
 
@@ -84,7 +84,7 @@
 
 ​			session.setMaxInactiveInterval()
 
-#### 4、application对象
+### 4、application对象
 
 ​	用于保存所有的应用程序中的公有数据。它在服务器启动时自动创建，服务器停止时销毁。
 
@@ -98,7 +98,7 @@
 
 #### 	4.2、管理应用程序环境属性
 
-#### 5、out对象：用于在web浏览器输出信息，并且管理应用服务器上的输出缓冲区
+### 5、out对象：用于在web浏览器输出信息，并且管理应用服务器上的输出缓冲区
 
 #### 	5.1、向客户端输出数据
 
@@ -134,10 +134,11 @@
 
 ![1563168038633](C:\Users\HZ\AppData\Roaming\Typora\typora-user-images\1563168038633.png)
 
-##### 	（3）应答或请求的exception对象
+##### 	（3）page对象
 
-![1563168020611](C:\Users\HZ\AppData\Roaming\Typora\typora-user-images\1563168020611.png)
+​		类似于 java 的 this
 
 ##### 	（4）获取异常信息的exception对象
 
 ![1563168102965](C:\Users\HZ\AppData\Roaming\Typora\typora-user-images\1563168102965.png)
+
